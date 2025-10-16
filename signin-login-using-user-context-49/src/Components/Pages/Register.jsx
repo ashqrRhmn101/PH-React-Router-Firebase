@@ -1,22 +1,21 @@
-import { createUserWithEmailAndPassword } from "firebase/auth/cordova";
-import React, { useState } from "react";
+// import { createUserWithEmailAndPassword } from "firebase/auth/cordova";
+import React, { use, useState } from "react";
 import { Link } from "react-router";
-import { auth } from "../Firebase/firebase.init";
+// import { auth } from "../Firebase/firebase.init";
+import { AuthContext } from "../AuthContext/AuthContext";
 
 const Register = () => {
+  const { createUser } = use(AuthContext);
+  // console.log(authInfo)
+
   const [error, setError] = useState("");
 
   const handleRegister = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-
-    console.log(email, password);
-
-    // reset error
-    setError("");
-
-    createUserWithEmailAndPassword(auth, email, password)
+    // console.log(email, password);
+    createUser(email, password)
       .then((result) => {
         console.log(result.user);
       })
@@ -24,6 +23,18 @@ const Register = () => {
         console.log(error.message);
         setError(error.message);
       });
+
+    // reset error
+    setError("");
+
+    // createUserWithEmailAndPassword(auth, email, password)
+    //   .then((result) => {
+    //     console.log(result.user);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error.message);
+    //     setError(error.message);
+    //   });
   };
 
   return (
