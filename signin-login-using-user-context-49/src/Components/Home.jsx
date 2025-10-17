@@ -1,10 +1,10 @@
-import React, { use } from 'react';
+// import React, { use } from 'react';
 import { AuthContext } from './AuthContext/AuthContext';
 
 const Home = () => {
 
-    const authInfo = use(AuthContext)
-    console.log(authInfo)
+    // const authInfo = use(AuthContext)
+    // console.log(authInfo)
 
     return (
         <div>

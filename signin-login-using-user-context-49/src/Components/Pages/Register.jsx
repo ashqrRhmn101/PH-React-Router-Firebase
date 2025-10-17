@@ -12,20 +12,23 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
+    // const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    // console.log(email, password);
+    // console.log(email, password,name);
+
+    // reset error
+    setError("");
+
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
+        e.target.reset();
       })
       .catch((error) => {
         console.log(error.message);
         setError(error.message);
       });
-
-    // reset error
-    setError("");
 
     // createUserWithEmailAndPassword(auth, email, password)
     //   .then((result) => {
