@@ -22,8 +22,8 @@ const Layout = () => {
       </header>
 
       {/* Main Start */}
-      <main className="w-11/12 mx-auto my-4 *:border grid grid-cols-12 gap-4">
-        <aside className="col-span-3">
+      <main className="w-11/12 mx-auto my-4 grid grid-cols-12 gap-4">
+        <aside className="col-span-3 sticky top-0 h-fit">
           <LeftAside />
         </aside>
 
@@ -31,7 +31,7 @@ const Layout = () => {
           <Outlet />
         </section>
 
-        <aside className="col-span-3">
+        <aside className="col-span-3 sticky top-0 h-fit">
           <RightAside />
         </aside>
       </main>

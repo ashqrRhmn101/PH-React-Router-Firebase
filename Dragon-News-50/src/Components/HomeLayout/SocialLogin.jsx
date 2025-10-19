@@ -3,8 +3,8 @@ import React from "react";
 const SocialLogin = () => {
   return (
     <div>
-      <h1>Social Login</h1>
-      <div className="">
+      <h1 className="font-bold mb-5">Login with</h1>
+      <div className="flex flex-col gap-2">
         {/* GitHub */}
         <button className="btn bg-black text-white border-black w-full">
           <svg
