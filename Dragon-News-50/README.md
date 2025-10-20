@@ -1,16 +1,69 @@
-# React + Vite
+# 🐉 Dragon News – Modern News Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** [https://dragon-news-breaking-1eee6.web.app/](https://dragon-news-breaking-1eee6.web.app/)  
+**GitHub Repository:** [https://github.com/ashqrRhmn101/PH-React-Router-Firebase/tree/main/Dragon-News-50](https://github.com/ashqrRhmn101/PH-React-Router-Firebase/tree/main/Dragon-News-50)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Overview
 
-## React Compiler
+**Dragon News** is a modern and responsive news portal built with **React**, **React Router**, **Firebase**, and **TailwindCSS**.  
+It provides users with the latest breaking news, categorized articles, and a secure login system using Firebase Authentication.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project reflects my skills in building **real-world React applications**, implementing **authentication systems**, and creating **dynamic UI layouts**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+✅ User Authentication (Firebase Email/Password Login & Registration)  
+✅ Protected Routes (Private news details view)  
+✅ Category-based News Filtering  
+✅ Responsive Design with TailwindCSS  
+✅ Dynamic Data Rendering  
+✅ Clean & Organized Codebase  
+✅ Firebase Hosting & Deployment  
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|-------------|----------|
+| **React** | Component-based UI |
+| **React Router** | Navigation & Protected Routes |
+| **Firebase** | Authentication + Hosting |
+| **TailwindCSS** | Responsive Styling |
+| **JavaScript (ES6)** | Logic & Interactivity |
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home Page  
+![Home Page](https://via.placeholder.com/900x500?text=Dragon+News+Home+Page)
+
+### 🔐 Login Page  
+![Login Page](https://via.placeholder.com/900x500?text=Dragon+News+Login+Page)
+
+### 📰 News Details  
+![News Details](https://via.placeholder.com/900x500?text=Dragon+News+Details+Page)
+
+---
+
+## ⚙️ Installation & Setup
+
+To run this project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/ashqrRhmn101/PH-React-Router-Firebase.git
+
+# Navigate to the project folder
+cd Dragon-News-50
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
