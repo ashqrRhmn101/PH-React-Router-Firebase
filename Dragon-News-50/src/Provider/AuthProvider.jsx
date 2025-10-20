@@ -35,9 +35,9 @@ const AuthProvider = ({ children }) => {
   };
 
   // User URL Photo
-  const userPhoto = (photoData) =>{
-    return updateProfile(auth.currentUser, photoData)
-  }
+  const userPhoto = (photoData) => {
+    return updateProfile(auth.currentUser, photoData);
+  };
 
   // useEffect
   useEffect(() => {
@@ -62,7 +62,7 @@ const AuthProvider = ({ children }) => {
   };
   return (
     <div>
-      <AuthContext value={authData}>{children}</AuthContext>
+      <AuthContext.Provider value={authData}>{children}</AuthContext.Provider>
     </div>
   );
 };
