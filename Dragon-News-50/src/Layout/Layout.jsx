@@ -9,7 +9,7 @@ import Loading from "../Pages/Loading";
 
 const Layout = () => {
   const { state } = useNavigate();
-console.log(state)
+  // console.log(state);
   return (
     <div>
       {/* Header Section */}
